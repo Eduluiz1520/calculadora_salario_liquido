@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Salario Liquido</title>
+  </head>
+  <body>
+    <h1>Calculadora de Salário Líquido</h1>
+
+    <form method="post">
+      <label for="salario bruto">Salário Bruto: </label>
+      <input type="text" id="salario_bruto" name="salario_bruto" />
+
+      <br /><br />
+      <label for="dependentes">Número de Dependentes: </label>
+      <input type="text" id="dependetes" name="dependentes" />
+
+      <br /><br />
+
+      <button type="submit">Calcular</button>
+    </form>
+    {% if mensagem %}
+    <p>{{mensagem}}</p>
+    {% endif %} {% if salario_liquido is not none %}
+    <p>Salário Líquido: R$ {{ "%.2f" | format(salario_liquido) }}</p>
+    {% endif %}
+  </body>
+</html>
