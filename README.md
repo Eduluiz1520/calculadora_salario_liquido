@@ -27,7 +27,7 @@ Também foram aplicados tratamentos para possíveis erros na entrada de dados, c
 ## Como executar
 
 1. Clone o repositório
-git clone URL_DO_REPOSITORIO
+git clone git@github.com:Eduluiz1520/calculadora_salario_liquido.git
 2. Acesse a pasta do projeto
 cd nome-do-projeto
 3. Crie um ambiente virtual
